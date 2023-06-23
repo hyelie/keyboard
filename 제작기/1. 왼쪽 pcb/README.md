@@ -114,14 +114,20 @@ PCB는 크게 2단계로 나뉩니다.
 ## 참고
 https://github.com/keebio/Keebio-Parts.pretty
  - TRRS 소켓인 PJ-320A를 가져다 썼습니다.
+
+   
 https://github.com/ai03-2725/MX_Alps_Hybrid
  - 키보드 스위치 심볼과 풋프린트를 가져다 썼습니다. vertical + hotswap 모두 있는 라이브러리입니다.
+   
 https://github.com/Biacco42/ProMicroKiCad
  - 아두이노 프로 마이크로 심볼과 풋프린트를 가져다 썼습니다.
+ 
 https://github.com/qmk/qmk_firmware/blob/master/docs/feature_split_keyboard.md
  - TRS 연결 방법에 대해 나와있습니다.
+   
 https://www.clien.net/service/board/lecture/16615720
  - 키 매트릭스 만드는 방법을 참고했습니다. 설명이 잘 되어 있어요.
+   
 https://blog.naver.com/mine44
  - 질문 답해주셔서 감사합니다.
 
