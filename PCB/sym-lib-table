@@ -1,6 +1,4 @@
 (sym_lib_table
-  (version 7)
   (lib (name "promicro")(type "Legacy")(uri "${KIPRJMOD}/lib/ProMicroKiCad-master/promicro_library/promicro.lib")(options "")(descr ""))
   (lib (name "MX_Alps_Hybrid")(type "Legacy")(uri "${KIPRJMOD}/lib/MX_Alps_Hybrid/Schematic Library/MX_Alps_Hybrid.lib")(options "")(descr ""))
-  (lib (name "TRRS-PJ-320A")(type "KiCad")(uri "${KIPRJMOD}/lib/pj320/TRRS-PJ-320A.kicad_sym")(options "")(descr ""))
 )

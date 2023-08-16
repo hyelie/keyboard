@@ -14,6 +14,7 @@
       "vias": 1.0,
       "zones": 0.6
     },
+    "ratsnest_display_mode": 0,
     "selection_filter": {
       "dimensions": true,
       "footprints": true,
@@ -68,7 +69,7 @@
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "bottom-up-left-ver4.kicad_prl",
+    "filename": "Entry-left.kicad_prl",
     "version": 3
   },
   "project": {
