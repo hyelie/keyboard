@@ -1,0 +1,50 @@
+0. PCB + PJ-320A + pro micro + pin headers 장착한 완성품 PCB 만들기
+1. sketch 그리기
+ - keycap outline
+ - PCB outline
+ - bezel
+keycap outline은 keycap에서 offset 3mm으로 주고, fillet은 2mm로 줌.
+PCB outline은 keycap outline과 겹치게 두고, PCB와 딱 맞게 설정함 + 1mm margin 줌.
+bezel은 keycap outline 기준으로 상하좌우 10mm씩 줌.
+
+2. 돌출시키기
+<보강판> 그림 참조
+- plate : sketch 평면 기준으로 1.5mm 두께
+- top plate : sketch 평면 1.5mm 위에 7.5mm 두께
+- bottom plate : sketch 평면 -9.6mm 아래에 1.5mm 두께 UNION sketch 평면 아래로 -9.6mm 두께
+
+3. screw hole
+TIP. sketch 평면 간격띄우기 + projection으로 outline 가져옴 + offset으로 선 그림 + 직사각형 패턴을 사용하면 볼트 위치 잡기 쉽다.
+TIP. 이후 hole을 사용해 나사구멍 뚫어주기만 하면 된다.
+
+<나사, M2.5, M2.5 threaed insert 참고>
+사용할 볼트는 M2.5x8mm이다. 머리는 4.5mm, 몸은 2.5mm, 길이는 8mm정도.
+threaded insert는 길이 5mm, OD 3.5mm
+bottom plate에서 꽂을 것이므로, bottom plate에는 2.5mm, plate에는 1.5mm, top plate는 4mm가 물리게 꽂을 예정.
+
+4. 부품 여백 공간 만들기
+TIP. sketch 평면 간격띄우기 + projection + extrude(돌출)을 사용해 없애면 매우 쉽다.
+
+1) reset button ITS-1105-5mm
+가로 6.5mm, 세로 4.5mm에 여유로 1.5mm offset을 잡았다. 높이는 5mm인데, 혹시 버튼이 눌릴까봐 한참 여유를 뒀다.( 위로 7.5mm 절단했다. ) 그러면 plate는 1.5mm 잘리고, top plate는 6mm 잘린다.
+
+2) TRRS
+가로 12.2mm, 세로 6.1mm, 높이 5mm.
+PCB부터 plate까지 3.5mm이므로 1mm 여유를 두고 plate부터 위로 2.5mm 절단했다. 그러면 plate는 1.5mm 잘리고 top plate는 1mm 잘린다. 
+TRRS 잭의 반지름은 2.5mm, 여유를 좀 둬서 2.8mm가 내경, 외경은 3.5mm로 뒀다.
+
+3) pro micro + usb-c
+대망의 pro micro. 얘가 양심이 없다 그냥.
+길이 : 36.8mm인 것 같다. 그걸 제하고 PCB 외부로 삐져나간 부분이 1.xmm인데, 여유 잡아 2mm로 + pro micro 바깥으로 삐져나간 usb-c socket이 1.xmm인데, 여유 잡아 2mm로 뒀다.ㅋ
+높이 : 
+    - pin header의 두께는 2.5mm, pro micro의 두께는 1.5mm인 것 같다. 여기에 납땜 잘못한 것 + 위쪽의 여유를 합쳐 총 8mm 높이로 잡았다. PCB부터 plate(sketch)까지 거리가 3.5mm이므로 총 4.5mm 절단했다. 그러면 plate는 1.5mm 잘리고 top plate는 3mm 잘린다.
+    - PCB로부터 pro micro의 높이는 약 2.5mm 차이나기 때문에 삐져나온 부분을 위한 공간이 있어야 한다. PCB는 -3.5mm에 있고, pro micro는 -3.5+2.5(pin header height)부터 시작하므로 -1mm로 잡으면 되는데, 여유를 위해 -1.5mm로 뒀다. 그러면 bottom plate는 1.5mm 잘리게 된다.
+    - USB-C 부분은, pro micro + pin header가 약 4mm이므로 PCB 위치(-3.5mm) + pro micro + pin header height (4mm) = 0.5mm이다. 따라서 원점 기준 0.5mm 위에 위치하게 했다.
+        - USB-C 포트의 margin으로 0.5mm정도를, + 외경은 거기에 2.5mm를 더했다.
+        - pro micro 위에 USB-C가 붙어 있기 때문에 USB-C를 위한 공간도 있어야 한다. 여유 많이 두고 10mm정도 뺐다.
+
+5. 정리
+키보드 외관의 위/아래의 chamfer는 1mm
+키보드 외관의 나머지 chamfer는 0.5mm (keycap outline 부분, usb-c 포트 구멍, trrs 단자 구멍 부분)
+sandwich 사이 chamfer는 0.2mm
+이렇게 썼다.
