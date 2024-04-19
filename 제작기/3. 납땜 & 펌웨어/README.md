@@ -78,6 +78,8 @@
 
     - 제가 작성한 예시는 다음 링크에서 확인할 수 있습니다. [keymap.c 링크](../../firmware/hyelie/keymaps/default/keymap.c), [info.json 링크](../../firmware/hyelie/info.json)
 
+    - 추가로, 개발자로 일하게 되면서 맥을 사용하게 되었습니다. 맥에서만 사용하는 키보드, 윈도우에서만 사용하는 키보드 2개를 분리해서 사용하다가 OS 감지 기능에 대해 알게 되어 적용했습니다.
+
 8. `C:\User\qmk_firmware\keyboard` 안에 펌웨어 폴더를 복사해 넣은 상태에서 다음 명령어를 실행해 컴파일합니다. 폴더는 다음 링크에 있습니다. [링크](../../firmware/hyelie/)
     - 컴파일한 결과로 나오는 .hex 파일은 `C:\User\qmk_firmware\.build`에 저장됩니다. 
     ```
